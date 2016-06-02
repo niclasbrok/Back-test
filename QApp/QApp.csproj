@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A76E014D-C957-49E3-8F94-CB918A3D9C94}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QApp</RootNamespace>
+    <AssemblyName>QApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdornedControl">
+      <HintPath>..\Lib\AdornedControl.dll</HintPath>
+    </Reference>
+    <Reference Include="AQI.AQILabs.Derivatives">
+      <HintPath>..\Lib\AQI.AQILabs.Derivatives.dll</HintPath>
+    </Reference>
+    <Reference Include="AQI.AQILabs.Kernel">
+      <HintPath>..\Lib\AQI.AQILabs.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="AQI.AQILabs.Kernel.Adapters">
+      <HintPath>..\Lib\AQI.AQILabs.Kernel.Adapters.dll</HintPath>
+    </Reference>
+    <Reference Include="AQI.AQILabs.Optimization">
+      <HintPath>..\Lib\AQI.AQILabs.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="AQI.AQILabs.SDK.Strategies">
+      <HintPath>..\Lib\AQI.AQILabs.SDK.Strategies.dll</HintPath>
+    </Reference>
+    <Reference Include="AQI.AQILabs.SecureWebClient">
+      <HintPath>..\Lib\AQI.AQILabs.SecureWebClient.dll</HintPath>
+    </Reference>
+    <Reference Include="AQI.AQILabs.SecureWebClient.Connectors.BLP">
+      <HintPath>..\Lib\AQI.AQILabs.SecureWebClient.Connectors.BLP.dll</HintPath>
+    </Reference>
+    <Reference Include="AQI.AQILabs.SecureWebClient.Connectors.IB">
+      <HintPath>..\Lib\AQI.AQILabs.SecureWebClient.Connectors.IB.dll</HintPath>
+    </Reference>
+    <Reference Include="AQI.AQILabs.Visualization">
+      <HintPath>..\Lib\AQI.AQILabs.Visualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Bloomberglp.Blpapi">
+      <HintPath>..\Lib\Bloomberglp.Blpapi.dll</HintPath>
+    </Reference>
+    <Reference Include="C5">
+      <HintPath>..\Lib\C5.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core">
+      <HintPath>..\Lib\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamicDataDisplay">
+      <HintPath>..\Lib\DynamicDataDisplay.dll</HintPath>
+    </Reference>
+    <Reference Include="FabTab">
+      <HintPath>..\Lib\FabTab.dll</HintPath>
+    </Reference>
+    <Reference Include="IBApi">
+      <HintPath>..\Lib\IBApi.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro">
+      <HintPath>..\Lib\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantApp">
+      <HintPath>..\Lib\QuantApp.exe</HintPath>
+    </Reference>
+    <Reference Include="QuantAppMetro.Wpf.Core">
+      <HintPath>..\Lib\QuantAppMetro.Wpf.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantAppMetro.Wpf.GenericAppTree">
+      <HintPath>..\Lib\QuantAppMetro.Wpf.GenericAppTree.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantAppMetro.Wpf.GenericAppTree.Contracts">
+      <HintPath>..\Lib\QuantAppMetro.Wpf.GenericAppTree.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantAppMetro.Wpf.MainApplication">
+      <HintPath>..\Lib\QuantAppMetro.Wpf.MainApplication.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantAppMetro.Wpf.SystemStyles">
+      <HintPath>..\Lib\QuantAppMetro.Wpf.SystemStyles.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\Lib\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tree.Controls">
+      <HintPath>..\Lib\Tree.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit">
+      <HintPath>..\Lib\WPFToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit.Extended">
+      <HintPath>..\Lib\WPFToolkit.Extended.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SettingUtils.cs" />
+    <Compile Include="DatabaseUtils.cs" />
+    <Compile Include="FunctionUtils.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
